@@ -1,0 +1,6 @@
+<div>
+  <span>{{exercises[index].op1+exercises[index].op+exercises[index].op2}}=</span>
+  <button *ngFor="let res of exercises[index].res" (click)="resultCalc(res)">{{res}}</button><br>
+  <span *ngIf="corect">כל הכבוד!!!!</span>
+  <span *ngIf="wrong">אוישששש טעית..</span>
+</div>

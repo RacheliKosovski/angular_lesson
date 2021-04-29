@@ -1,0 +1,5 @@
+<h1>  {{ title }}  </h1>
+<button (click)="typeShow = 1" >למשחק התרגילים</button>
+<button (click)="typeShow = 2">למשחק האיביסי</button>
+<app-exercise *ngIf="typeShow == 1"></app-exercise>
+<app-abc  *ngIf="typeShow == 2"></app-abc>
